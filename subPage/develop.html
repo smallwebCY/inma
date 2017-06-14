@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>一鸣食品</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<link href="../img/icon/logo.png" rel="shortcut icon" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/fontawesome/css/font-awesome.min.css" />
+		<!--<link rel="stylesheet" type="text/css" href="swiper/css/swiper-3.2.7.min.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+	</head>
+		
+	<body>
+		<div class="bigWrap">
+			<!-- Header -->
+			<header id="page-top" class="">
+				<nav class="navbar navbar-custom top-nav-collapse" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+				<i class="fa fa-bars"></i>
+				</button>
+							<a class="navbar-brand" href="../index.html">
+								<img src="../img/icon/logo.png" />
+							</a>
+						</div>
+						<div class="collapse navbar-collapse navbar-left navbar-main-collapse top-menu">
+							<ul class="nav navbar-nav">
+								<li class="page-scroll">
+									<a href="#">了解我们</a>
+									<ul class="subNav">
+										<li><a href="story.html">品牌故事</a></li>
+										<li><a href="culture.html">品牌文化</a></li>
+										<li><a href="history.html">企业简介</a></li>
+										<li><a href="develop.html">企业动态</a></li>
+									</ul>
+								</li>
+								<li class="page-scroll">
+									<a href="milk.html">牛奶</a>
+								</li>
+								<li class="page-scroll">
+									<a href="cure.html">烘焙</a>
+								</li>
+								<li class="page-scroll">
+									<a href="inmhost.html">鸣粉之家</a>
+								</li>
+								<li class="page-scroll">
+									<a href="inmpush.html">当季主推</a>
+								</li>
+								<li class="page-scroll">
+									<a href="join.html">招聘</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<!-- Header -->
+			
+			<!-- Intro top content -->
+			<section class="develop-wrap floorBox" id="home">
+				<div class="container">
+					<div class="row">
+						
+					</div>
+					
+				</div>
+			</section>
+			
+			
+		</div>
+			<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../swiper/js/swiper-3.2.7.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				$(".nav .page-scroll").eq(0).addClass("active");
+				$(".nav .page-scroll").find(".subNav li").eq(3).find("a").css("color","#ff2828");
+				
+//				var mySwiper = new Swiper('.swiper-container', {
+//					autoplay: 4000, //可选选项，自动滑动
+//					autoplayDisableOnInteraction: false,
+//					loop: true
+//				})
+				$.ajax({
+					type:"post",
+					url:"http://weix.yi-ming.cn/xiaossn/tab.ashx",
+					async:true,
+					dataType:"json"
+					success:function(data){
+						console.log(data)
+					}
+				});
+			</script>
+	</body>
+
+</html>

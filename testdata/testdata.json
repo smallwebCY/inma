@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "imgsrc":"active1",
+            "time":"2008.1.12",
+            "activetxt":"参观",
+            "point":"上海"
+        },
+        {
+            "imgsrc":"active2",
+            "time":"2007.1.12",
+            "activetxt":"拔河",
+            "point":"南京"
+        },
+        {
+            "imgsrc":"active3",
+            "time":"2006.1.12",
+            "activetxt":"登山",
+            "point":"温州"
+        },
+        {
+            "imgsrc":"active4",
+            "time":"2005.1.12",
+            "activetxt":"野炊",
+            "point":"宁波"
+        }
+    ]
+}
